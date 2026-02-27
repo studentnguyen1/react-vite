@@ -1,22 +1,20 @@
 import { useState } from 'react'
 import './App.css'
 import reactLogo from './assets/react.svg'
+import MyComponent from './components/learn/MyComponent'
+import { SecondComponent, ThirtComponent } from "./components/learn/SecondComponent"
 import viteLogo from '/vite.svg'
 
 
-const MyComponent = () => {
-  return (
-    <div>Hello</div>
-  );
-}
+
 const App = () => {
   const [count, setCount] = useState(0)
 
 
-  const myFunction = () => {
-    console.log('Hello World')
-  }
-  myFunction()
+  // const myFunction = () => {
+  //   console.log('Hello World')
+  // }
+  // myFunction()
 
   return (
     <>
@@ -28,8 +26,10 @@ const App = () => {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Hello Word</h1>
-      <MyComponent></MyComponent>
+      <h1>Hello Word 20 22 </h1>
+      <MyComponent />
+      <SecondComponent />
+      <ThirtComponent />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -39,7 +39,7 @@ const App = () => {
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Click on the Vite and React logos to learn more about me 2
       </p>
     </>
   )
