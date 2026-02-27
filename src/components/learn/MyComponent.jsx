@@ -1,6 +1,12 @@
+
+import "./style.css";
+
 const MyComponent = () => {
     return (
-        <div>Hello</div>
+        <>
+            <div className="child">Hello</div>
+            <div>Go</div>
+        </>
     );
 }
 export default MyComponent
