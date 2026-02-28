@@ -3,7 +3,7 @@ const SecondComponent = () => {
         <div>Second Component</div>
     )
 }
-const ThirtComponent = () => {
+const ThirdComponent = () => {
     return (<div>Third Component</div>)
 }
-export { SecondComponent, ThirtComponent }
+export { SecondComponent, ThirdComponent }
