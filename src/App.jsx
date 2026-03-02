@@ -5,16 +5,21 @@ import TodoNew from './components/todo/TodoNew'
 const App = () => {
   const age = 25;
   const data = { address: "Ha Noi", age: 25 }
+  const newFunction = (name) => {
+    alert(`call me ${name}`)
+  }
 
 
 
   return (
     <div className="todo-container">
       <div className="todo-title">Todo List</div>
-      <TodoNew />
+      <TodoNew
+        newFunction={newFunction} />
       <TodoData
         age={age}
         data={data}
+
 
       />
       <div className="todo-image">
