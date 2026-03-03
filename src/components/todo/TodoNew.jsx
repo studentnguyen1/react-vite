@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const TodoNew = (props) => {
-    // const { newFunction } = props;
+    const { newFunction } = props;
     // newFunction("nguyen")
     const [valueInput, setValueInput] = useState("eric")
 
@@ -10,7 +10,8 @@ const TodoNew = (props) => {
 
     }
     const hanldeButton = () => {
-        console.log("Check value input: ", valueInput);
+        // console.log("Check value input: ", valueInput);
+        newFunction(valueInput);
     }
     return (
         <div className="todo-new">
